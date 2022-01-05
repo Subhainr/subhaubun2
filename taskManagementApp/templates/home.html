@@ -1,0 +1,29 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>Physics Tuition home</title>
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'main.css' %}">
+    </head>
+    <body>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'camera' %}">Our Camera</a></li>
+        <li><a href="{% url 'courses' %}">Our Courses</a></li>
+        <li><a href="{% url 'rates' %}">Course Fee</a></li>
+        <li><a href="{% url 'contact' %}">Contact me</a></li>
+        <li><a href="{% url 'ML_prediction' %}">Our Machine Learning Prediction</a></li>
+      </ul>
+
+      <h1>Welcome to Physics & Computer Tuition </h1>
+      <p>This is an <b>incredible</b> house for <b>nurturing</b> your concepts. Feel free to clear your doubts</p>
+      <img src="{% static 'home image.jpg' %}" alt="Homepage picture" width="600" height="300">
+      <p>Click below to see our Courses</p>
+      <a href="{% url 'courses' %}">Click here</a>
+
+      <p>This page needs some styling!...</p>
+      <button onclick="buttonFunc()">Click me</button>
+      <script type="text/javascript" src="{% static 'main1.js' %}"></script>
+    </body>
+  </html>

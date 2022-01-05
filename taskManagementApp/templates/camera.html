@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=”en” dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Name of your awesome camera app -->
+   <title>Camera App</title> <!-- Link to your main style sheet-->
+   {% load static %}
+   <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+   <!-- Reference to your JavaScript file -->
+   <ul>
+     <li><a href="{% url 'home' %}">Home</a></li>
+     <li><a href="{% url 'camera' %}">Our Camera</a></li>
+     <li><a href="{% url 'courses' %}">Our Courses</a></li>
+     <li><a href="{% url 'rates' %}">Course Fee</a></li>
+     <li><a href="{% url 'contact' %}">Contact me</a></li>
+     <li><a href="{% url 'ML_prediction' %}">Our Machine Learning Prediction</a></li>
+   </ul>
+   <!-- Camera -->
+   <main id="camera">
+      <!-- Camera sensor --> <canvas id="camera--sensor"></canvas> <!-- Camera view --> <video id="camera--view" autoplay playsinline></video> <!-- Camera output --> <img src="//:0" alt="" id="camera--output"> <!-- Camera trigger --> <button id="camera--trigger">Take a picture</button>
+   </main> <!-- Reference to your JavaScript file -->
+   <script type="text/javascript" src="{% static 'app.js' %}"></script>
+
+</body>
+
+</html>

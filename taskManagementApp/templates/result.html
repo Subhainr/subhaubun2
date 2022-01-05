@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Result Page</title>
+  </head>
+  <body>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'courses' %}">Our Courses</a></li>
+    <li><a href="{% url 'rates' %}">Course Fee</a></li>
+    <li><a href="{% url 'contact' %}">Contact me</a></li>
+    <li><a href="{% url 'ML_prediction' %}">Our Machine Learning Prediction</a></li>
+    <h1>Your Query has been sent succesfully.</h1>
+    <p> {{First_name}} </p>
+    <p> {{Second_name}} </p>
+    <p> {{email}} </p>
+    <p> {{sw}} </p>
+    <p> {{m}} </p>
+  </body>
+</html>

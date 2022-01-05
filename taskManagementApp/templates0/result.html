@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Result Page</title>
+  </head>
+  <body>
+    <li><a href="{% url 'home' %}">Home</a></li>
+
+    <h1>Result</h1>
+    {% if messages %}
+      {% for message in messages %}
+        <h3>{{message}}</h3>
+      <p>  {{all_items}} <p>
+      {% endfor %}
+    {% endif %}
+
+  </body>
+</html>

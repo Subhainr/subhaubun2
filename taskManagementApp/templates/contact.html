@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    {% load static %}
+  </head>
+  <body>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'courses' %}">Our Courses</a></li>
+      <li><a href="{% url 'rates' %}">Course Fee</a></li>
+      <li><a href="{% url 'contact' %}">Contact me</a></li>
+      <li><a href="{% url 'ML_prediction' %}">Our Machine Learning Prediction</a></li>
+    </ul>
+    <h1>Contact</h1>
+    <p>Are you interested in our courses and dream big? Let us know</p>
+
+    <form class="" action="{% url 'result' %}" >
+      {%csrf_token%}
+      <p>First name: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Second Name:</p>
+      <input type="text" placeholder="e.g. Kriti..." name = First_name>&emsp;
+      <input type="text" placeholder="e.g. Sen..." name = Second_name>
+      <p>Email:</p>
+      <input type="text" placeholder="e.g. kritisen@gmail.com..." name = email >
+      <p>Reason for contact:</p>
+      <select name= Reason>
+        <option value="Request to join Tuition" >Request to join Tuition</option>
+        <option value="I have specific Question" >I have specific Question</option>
+        <option value="Request to join as Faculty" >Request to join as Faculty</option>
+      </select>
+      <br>
+      <br>
+      <textarea name= TextBox rows="8" cols="80" placeholder="Write here..." ></textarea>
+      <br>
+      <input type="submit" value="Click me">
+    </form>
+  </body>
+</html>

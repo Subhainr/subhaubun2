@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'ML_prediction' %}">Our Machine Learning Prediction Page</a></li>
+    <h1>Your Task List</h1>
+    {% for item in all_items %}
+      <p>{{item}}</p>
+    {% endfor %}
+
+    <form action="{% url 'result' %}" method="post">
+      {% csrf_token %}
+      <input type="text" name="task" placeholder="Enter task.."><br>
+      <input type="text" name="priority" placeholder="Enter Priority.."><br>
+      <input type="submit" value="Submit"><br>
+      
+
+    </form>
+
+  </body>
+</html>

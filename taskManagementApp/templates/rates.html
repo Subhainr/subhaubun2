@@ -1,0 +1,71 @@
+<!--
+1) Table of Prices
+2) List of terms and conditions
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Course Fee</title>
+    {% load static %}
+  </head>
+  <body>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'courses' %}">Our Courses</a></li>
+      <li><a href="{% url 'rates' %}">Course Fee</a></li>
+      <li><a href="{% url 'contact' %}">Contact me</a></li>
+      <li><a href="{% url 'ML_prediction' %}">Our Machine Learning Prediction</a></li>
+    </ul>
+    <h1>Course Fee Ratecard and T&Cs</h1>
+
+    <h3>Course Fee - types and prices</h3>
+    <table>
+      <tr>
+          <th><u>Course Type</u></th>
+          <th><u><u>Price</u></th>
+          <th><u>Standard</u></th>
+      </tr>
+      <tr>
+        <td>Elementary</td>
+        <td>&emsp;&emsp;Rs 1000 onwards</td>
+        <td>&emsp;&emsp;Class VIII</td>
+      </tr>
+      <tr>
+        <td>Elementary</td>
+        <td>&emsp;&emsp;Rs 1000 onwards</td>
+        <td>&emsp;&emsp;Class IX</td>
+      </tr>
+      <tr>
+        <td>Elementary</td>
+        <td>&emsp;&emsp;Rs 1000 onwards</td>
+        <td>&emsp;&emsp;Class X</td>
+      </tr>
+
+      <tr>
+        <td><br>Advanced</td>
+        <td><br>&emsp;&emsp;Rs 2000 onwards</td>
+        <td><br>&emsp;&emsp;Class XI</td>
+      </tr>
+      <tr>
+        <td>Advanced</td>
+        <td>&emsp;&emsp;Rs 2000 onwards</td>
+        <td>&emsp;&emsp;Class XII</td>
+      </tr>
+      <tr>
+        <td>Advanced</td>
+        <td>&emsp;&emsp;Rs 3000 onwards</td>
+        <td>&emsp;&emsp;Class Competitive</td>
+      </tr>
+    </table>
+
+    <h3><i>Terms and conditions</i></h3>
+    <ul>
+      <li><b>Full refund, 100% moneyback guarantee.</b> T&C applied</li>
+      <li>Proper tension free classes with proper individual care</li>
+      <li>Our faculties are from <b>IIT KGP, IIIT Pune & other Institutes of National Importance.</b>
+      <li>No refunds if any fair motivies or rules are violated</li>
+    </ul>
+  </body>
+</html>

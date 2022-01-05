@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Our Courses</title>
+    {% load static %}
+  </head>
+  <body>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'courses' %}">Our Courses</a></li>
+      <li><a href="{% url 'rates' %}">Course Fee</a></li>
+      <li><a href="{% url 'contact' %}">Contact me</a></li>
+      <li><a href="{% url 'ML_prediction' %}">Our Machine Learning Prediction</a></li>
+    <h1>Courses</h1>
+
+    <p>Welcome to our courses. Have a look at our exciting offerings</p>
+    <h2>&emsp;&emsp;&emsp;<u>Elementary</u>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       <u>Advanced</u></h2>
+
+    <a href="{% url 'elementary' %}">
+      <img src="{% static 'Elementary.png' %}" alt="Elementary Class" width="600" height="300">
+    <a href="{% url 'advanced' %}">
+      <img src="{% static 'Advanced.jpg' %}" alt="Advanced Class" width="600" height="300">
+    </a>
+
+  </body>
+</html>

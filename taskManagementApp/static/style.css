@@ -1,0 +1,14 @@
+html, body {
+   margin: 0;padding: 0;height: 100 % ;width: 100 % ;
+}
+#camera, #camera--view, #camera--sensor, #camera--output {
+   position: fixed;height: 100 % ;width: 100 % ;object - fit: cover;
+}
+#camera--view, #camera--sensor, #camera--output {
+   transform: scaleX(-1);filter: FlipH;
+}
+#camera--trigger {
+   width: 200 px;background - color: black;color: white;font - size: 16 px;border - radius: 30 px;border: none;padding: 15 px 20 px;text - align: center;box - shadow: 0 5 px 10 px 0 rgba(0, 0, 0, 0.2);position: fixed;bottom: 30 px;left: calc(50 % -100 px);
+}.taken {
+   height: 100 px!important;width: 100 px!important;transition: all 0.5 s ease - in ;border: solid 3 px white;box - shadow: 0 5 px 10 px 0 rgba(0, 0, 0, 0.2);top: 20 px;right: 20 px;z - index: 2;
+}
